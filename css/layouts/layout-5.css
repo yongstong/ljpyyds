@@ -1,0 +1,100 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-5 css start
+==========================  **/
+/* menu[ layout-5 ] css start */
+body.layout-5 {
+    margin: 30px;
+    background: rgba(25, 188, 191, 0.2);
+}
+
+body.layout-5 .pcoded-main-container {
+    background: #eff3f6;
+    border-radius: 0 0 10px 0;
+    box-shadow: 1px 1px 0 0 #b7bfc6;
+}
+
+body.layout-5 .pcoded-navbar {
+    border-radius: 10px 0 0 10px;
+}
+
+body.layout-5 .pcoded-navbar[class*=navbar-image]:before {
+    border-radius: 10px 0 0 10px;
+}
+
+body.layout-5 .pcoded-navbar .navbar-brand {
+    border-radius: 10px 0 0 0;
+}
+
+body.layout-5 .pcoded-navbar .pcoded-inner-navbar > li.active:after, body.layout-5 .pcoded-navbar .pcoded-inner-navbar > li.pcoded-trigger:after {
+    display: none;
+}
+
+body.layout-5 .pcoded-navbar.mob-open ~ .pcoded-header:before,
+body.layout-5 .pcoded-navbar.mob-open ~ .pcoded-main-container:before, body.layout-5 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-header:before,
+body.layout-5 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-main-container:before {
+    background: transparent;
+}
+
+body.layout-5 .pcoded-header {
+    border-radius: 0 10px 0 0;
+    box-shadow: 0 1px 0 0 #e2e5e8, 1px -1px 0 0 #b7bfc6;
+}
+
+@media only screen and (max-width: 992px) {
+    body.layout-5 .pcoded-header {
+        border-radius: 10px 10px 0 0;
+    }
+
+    body.layout-5 .pcoded-navbar {
+        margin-left: -294px;
+    }
+
+    body.layout-5 .pcoded-navbar.mob-open {
+        margin-left: 0;
+    }
+
+    body.layout-5 .pcoded-main-container {
+        box-shadow: 1px 1px 0 0 #e2e5e8, -1px 0 0 0 #e2e5e8;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    body.layout-5 {
+        margin: 0;
+    }
+
+    body.layout-5 .navbar-brand,
+  body.layout-5 .pcoded-header,
+  body.layout-5 .pcoded-main-container,
+  body.layout-5 .pcoded-navbar {
+        border-radius: 0;
+    }
+}
+
+/* menu [ layout-5 ] css end */

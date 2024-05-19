@@ -1,0 +1,85 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-2 css start
+==========================  **/
+/* menu[ layout-2 ] css start */
+body.layout-2 .pcoded-navbar a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+body.layout-2 .pcoded-navbar .pcoded-submenu {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+body.layout-2 .pcoded-navbar .pcoded-submenu .pcoded-submenu {
+    background-color: transparent;
+}
+
+body.layout-2 .pcoded-navbar.navbar-collapsed .pcoded-inner-navbar > li.pcoded-trigger .pcoded-submenu:after {
+    display: none;
+}
+
+body.layout-2 .pcoded-navbar.navbar-collapsed:hover .pcoded-inner-navbar > li > a > .pcoded-micon + .pcoded-mtext {
+    top: 25px;
+}
+
+body.layout-2 .pcoded-navbar.navbar-collapsed:hover .pcoded-inner-navbar > li.pcoded-trigger .pcoded-submenu li a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+body.layout-2 .pcoded-navbar .pcoded-inner-navbar .pcoded-menu-caption {
+    display: none;
+}
+
+body.layout-2 .pcoded-navbar .pcoded-inner-navbar > li > a {
+    padding: 20px 15px 20px 20px;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.layout-2 .pcoded-navbar .pcoded-inner-navbar > li.pcoded-hasmenu > a:after {
+    top: 25px;
+}
+
+body.layout-2 .pcoded-navbar .pcoded-inner-navbar > li.active:after, body.layout-2 .pcoded-navbar .pcoded-inner-navbar > li.pcoded-trigger:after {
+    display: none;
+}
+
+body.layout-2 .pcoded-navbar .pcoded-inner-navbar > li.active > a, body.layout-2 .pcoded-navbar .pcoded-inner-navbar > li.pcoded-trigger > a {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+body.layout-2 .pcoded-navbar .pcoded-inner-navbar li.active > a, body.layout-2 .pcoded-navbar .pcoded-inner-navbar li:focus > a, body.layout-2 .pcoded-navbar .pcoded-inner-navbar li:hover > a {
+    color: #fff;
+}
+
+body.layout-2 .pcoded-navbar .pcoded-inner-navbar li .pcoded-submenu > li.active > a:before, body.layout-2 .pcoded-navbar .pcoded-inner-navbar li .pcoded-submenu > li:focus > a:before, body.layout-2 .pcoded-navbar .pcoded-inner-navbar li .pcoded-submenu > li:hover > a:before {
+    background: #fff;
+}
+
+/* menu [ layout-2 ] css end */

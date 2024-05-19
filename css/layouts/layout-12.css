@@ -1,0 +1,174 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-12 css start
+==========================  **/
+/* menu[ layout-12 ] css start */
+@media only screen and (min-width: 992px) {
+    body.layout-12 .pcoded-navbar {
+        background: #fff;
+        box-shadow: inset 0 1px 20px 0 rgba(63, 77, 103, 0.15);
+    }
+
+    body.layout-12 .pcoded-navbar:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(25, 188, 191, 0.1);
+    }
+
+    body.layout-12 .pcoded-navbar .navbar-content {
+        box-shadow: none;
+    }
+
+    body.layout-12 .pcoded-navbar .pcoded-inner-navbar .pcoded-submenu {
+        background: transparent;
+    }
+
+    body.layout-12 .pcoded-navbar .pcoded-inner-navbar > li.active > a, body.layout-12 .pcoded-navbar .pcoded-inner-navbar > li.pcoded-trigger > a {
+        background: transparent;
+    }
+
+    body.layout-12 .pcoded-navbar .pcoded-inner-navbar > li.active:after, body.layout-12 .pcoded-navbar .pcoded-inner-navbar > li.pcoded-trigger:after {
+        display: none;
+    }
+
+    body.layout-12 .pcoded-navbar ~ .pcoded-main-container {
+        box-shadow: -20px 0 20px -20px rgba(204, 205, 206, 0.4);
+        background: #fff;
+    }
+
+    body.layout-12 .pcoded-navbar.mob-open ~ .pcoded-header,
+  body.layout-12 .pcoded-navbar.mob-open ~ .pcoded-main-container, body.layout-12 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-header,
+  body.layout-12 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-main-container {
+        margin-left: 264px;
+    }
+
+    body.layout-12 .pcoded-navbar.mob-open ~ .pcoded-header:before,
+  body.layout-12 .pcoded-navbar.mob-open ~ .pcoded-main-container:before, body.layout-12 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-header:before,
+  body.layout-12 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-main-container:before {
+        background: transparent;
+    }
+
+    body.layout-12 .pcoded-navbar.mob-open ~ .pcoded-header, body.layout-12 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-header {
+        width: calc(100% - 264px);
+    }
+}
+
+body.layout-12 .pcoded-navbar .header-logo {
+    margin-right: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+body.layout-12 .pcoded-navbar .header-logo .mobile-menu span {
+    background-color: rgba(57, 70, 92, 0.8);
+}
+
+body.layout-12 .pcoded-navbar .header-logo .mobile-menu span:after, body.layout-12 .pcoded-navbar .header-logo .mobile-menu span:before {
+    background-color: rgba(57, 70, 92, 0.8);
+}
+
+body.layout-12 .pcoded-navbar .header-logo .mobile-menu:hover span {
+    background-color: #39465C;
+}
+
+body.layout-12 .pcoded-navbar .header-logo .mobile-menu:hover span:after, body.layout-12 .pcoded-navbar .header-logo .mobile-menu:hover span:before {
+    background-color: #39465C;
+}
+
+body.layout-12 .pcoded-navbar .header-logo .mobile-menu.on span {
+    background-color: transparent;
+}
+
+body.layout-12 .pcoded-navbar .header-logo .b-brand .b-title {
+    color: #39465C;
+}
+
+body.layout-12 .pcoded-navbar[class*=brand-]:not(.brand-default) .mobile-menu span,
+body.layout-12 .pcoded-navbar[class*=brand-]:not(.brand-default) .mobile-menu span:after,
+body.layout-12 .pcoded-navbar[class*=brand-]:not(.brand-default) .mobile-menu span:before {
+    background: #fff;
+}
+
+body.layout-12 .pcoded-navbar[class*=brand-]:not(.brand-default) .mobile-menu.on span {
+    background: transparent;
+}
+
+body.layout-12 .pcoded-navbar[class*=brand-]:not(.brand-default) .header-logo .b-brand .b-title {
+    color: #fff;
+}
+
+body.layout-12 .pcoded-navbar[class*=brand-]:not(.brand-default) .b-bg {
+    background: #fff;
+    color: #19BCBF;
+}
+
+body.layout-12 .pcoded-navbar.brand-blue .header-logo, body.layout-12 .pcoded-navbar.menu-light.brand-blue .header-logo, body.layout-12 .pcoded-navbar[class*=navbar-].brand-blue .header-logo {
+    background: #19BCBF;
+}
+
+body.layout-12 .pcoded-navbar.brand-blue:before {
+    background: rgba(25, 188, 191, 0.1);
+}
+
+body.layout-12 .pcoded-navbar.brand-red .header-logo, body.layout-12 .pcoded-navbar.menu-light.brand-red .header-logo, body.layout-12 .pcoded-navbar[class*=navbar-].brand-red .header-logo {
+    background: #b31d1d;
+}
+
+body.layout-12 .pcoded-navbar.brand-red:before {
+    background: rgba(179, 29, 29, 0.1);
+}
+
+body.layout-12 .pcoded-navbar.brand-purple .header-logo, body.layout-12 .pcoded-navbar.menu-light.brand-purple .header-logo, body.layout-12 .pcoded-navbar[class*=navbar-].brand-purple .header-logo {
+    background: #463699;
+}
+
+body.layout-12 .pcoded-navbar.brand-purple:before {
+    background: rgba(70, 54, 153, 0.1);
+}
+
+body.layout-12 .pcoded-navbar.brand-info .header-logo, body.layout-12 .pcoded-navbar.menu-light.brand-info .header-logo, body.layout-12 .pcoded-navbar[class*=navbar-].brand-info .header-logo {
+    background: #2DCEE3;
+}
+
+body.layout-12 .pcoded-navbar.brand-info:before {
+    background: rgba(45, 206, 227, 0.1);
+}
+
+body.layout-12 .pcoded-navbar.brand-dark .header-logo, body.layout-12 .pcoded-navbar.menu-light.brand-dark .header-logo, body.layout-12 .pcoded-navbar[class*=navbar-].brand-dark .header-logo {
+    background: #39465C;
+}
+
+body.layout-12 .pcoded-navbar.brand-dark:before {
+    background: rgba(57, 70, 92, 0.1);
+}
+
+/* menu [ layout-12 ] css end */

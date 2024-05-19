@@ -1,0 +1,89 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-13 css start
+==========================  **/
+/* menu[ layout-13 ] css start */
+body.layout-13 .pcoded-main-container:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    left: 0;
+    top: -1px;
+    z-index: 1;
+    background: #fff;
+    box-shadow: inset 0 -1px 4px 0 rgba(63, 77, 103, 0.15);
+}
+
+body.layout-13 .pcoded-main-container .pcoded-wrapper {
+    position: relative;
+    z-index: 3;
+}
+
+body.layout-13 .pcoded-navbar .navbar-content {
+    box-shadow: none;
+}
+
+body.layout-13 .pcoded-navbar[class*=navbar-] ~ .pcoded-main-container .page-header .breadcrumb-item + .breadcrumb-item::before,
+body.layout-13 .pcoded-navbar[class*=navbar-] ~ .pcoded-main-container .page-header .page-header-title + .breadcrumb > .breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.layout-13 .pcoded-navbar[class*=navbar-] ~ .pcoded-main-container .page-header .page-header .page-header-title + .breadcrumb > .breadcrumb-item:last-child a,
+body.layout-13 .pcoded-navbar[class*=navbar-] ~ .pcoded-main-container .page-header h5 {
+    color: #fff;
+}
+
+body.layout-13 .pcoded-navbar.navbar-blue ~ .pcoded-main-container:after {
+    background: #19BCBF;
+}
+
+body.layout-13 .pcoded-navbar.navbar-red ~ .pcoded-main-container:after {
+    background: #FF9764;
+}
+
+body.layout-13 .pcoded-navbar.navbar-purple ~ .pcoded-main-container:after {
+    background: #463699;
+}
+
+body.layout-13 .pcoded-navbar.navbar-info ~ .pcoded-main-container:after {
+    background: #2DCEE3;
+}
+
+body.layout-13 .pcoded-navbar.navbar-dark ~ .pcoded-main-container:after {
+    background: #39465C;
+}
+
+@media only screen and (max-width: 992px) {
+    body.layout-13 .pcoded-navbar.mob-open ~ .pcoded-header:before,
+  body.layout-13 .pcoded-navbar.mob-open ~ .pcoded-main-container:before {
+        z-index: 5;
+    }
+}
+
+/* menu [ layout-13 ] css end */

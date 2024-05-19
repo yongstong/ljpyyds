@@ -1,0 +1,199 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-1 css start
+==========================  **/
+/* menu[ layout-1 ] css start */
+body.layout-1 .pcoded-navbar .toggle-sidemenu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #252e3d;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 0 0;
+}
+
+@media only screen and (max-width: 991px) {
+    body.layout-1 .pcoded-navbar .toggle-sidemenu {
+        display: none;
+    }
+
+    body.layout-1 .pcoded-navbar.mob-open .toggle-sidemenu {
+        display: flex;
+    }
+}
+
+body.layout-1 .pcoded-navbar.navbar-collapsed .toggle-sidemenu {
+    display: none;
+}
+
+body.layout-1 .pcoded-navbar.navbar-collapsed .pcoded-inner-navbar > li.pcoded-trigger .pcoded-submenu li a {
+    white-space: normal;
+}
+
+body.layout-1 .pcoded-navbar .header-logo {
+    padding: 10px 20px;
+}
+
+body.layout-1 .pcoded-navbar .sidemenu {
+    box-shadow: inset -1px 0 0 0 rgba(181, 189, 202, 0.2);
+}
+
+body.layout-1 .pcoded-navbar .sidemenu li {
+    position: relative;
+}
+
+body.layout-1 .pcoded-navbar .sidemenu li a {
+    font-size: 22px;
+    padding: 10px 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+body.layout-1 .pcoded-navbar .sidemenu li a:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 60%;
+    left: 20%;
+    bottom: 0;
+    border-bottom: 1px solid rgba(181, 189, 202, 0.2);
+}
+
+body.layout-1 .pcoded-navbar .sidemenu li a span {
+    display: none;
+}
+
+body.layout-1 .pcoded-navbar .sidemenu li:last-child a:after {
+    display: none;
+}
+
+body.layout-1 .pcoded-navbar .sidemenu li.active {
+    color: #19BCBF;
+}
+
+body.layout-1 .pcoded-navbar .sidemenu li.active:after {
+    content: "";
+    background-color: #19BCBF;
+    z-index: 1027;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+}
+
+body.layout-1 .pcoded-navbar .layout1-nav {
+    display: flex;
+    align-items: stretch;
+    height: auto;
+    min-height: 100%;
+}
+
+body.layout-1 .pcoded-navbar .side-content {
+    flex: 1 1 0;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink {
+    display: none;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink.active {
+    display: block;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar li.pcoded-menu-caption {
+    font-size: 20px;
+    padding: 16px 15px 16px 18px;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar li.pcoded-menu-caption:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 40px;
+    left: 18px;
+    bottom: 13px;
+    border-bottom: 1px solid rgba(181, 189, 202, 0.2);
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a {
+    padding: 7px 7px 7px 40px;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
+    left: 20px;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > .pcoded-submenu > li > a {
+    padding: 7px 7px 7px 60px;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > .pcoded-submenu > li > a:before {
+    left: 40px;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar > li > a {
+    padding: 12px 10px 12px 20px;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar > li > a .pcoded-micon {
+    display: none;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar > li > a .pcoded-mtext {
+    position: relative;
+    top: 0;
+}
+
+body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar > li.active:after, body.layout-1 .pcoded-navbar .side-content .sidelink .pcoded-inner-navbar > li.pcoded-trigger:after {
+    display: none;
+}
+
+body.layout-1 .pcoded-navbar.hide-sidemenu .sidemenu {
+    position: absolute;
+    left: -70px;
+}
+
+body.layout-1 .pcoded-navbar.hide-sidemenu .toggle-sidemenu i {
+    transform: rotate(180deg);
+}
+
+body.layout-1 .pcoded-navbar.menu-light .toggle-sidemenu {
+    background: #f1f1f1;
+}
+
+body.layout-1.box-layout .pcoded-navbar .toggle-sidemenu {
+    display: none;
+}
+
+/* menu [ layout-1 ] css end */

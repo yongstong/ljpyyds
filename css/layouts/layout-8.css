@@ -1,0 +1,291 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-8 css start
+==========================  **/
+/* menu[ layout-8 ] css start */
+body.layout-8 .pcoded-header {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    body.layout-8 .pcoded-header {
+        display: flex;
+    }
+
+    body.layout-8 .pcoded-header .collapse:not(.show) {
+        display: flex;
+        background: #fff;
+    }
+}
+
+@media (max-width: 575px) {
+    body.layout-8 .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal {
+    top: 0;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .mobile-menu {
+    display: none;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .navbar-content {
+    flex: 1 1 auto;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .header-logo {
+    display: inline-flex;
+    z-index: 1028;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal ~ .pcoded-main-container {
+    margin-top: 64px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .navbar-wrapper {
+    display: flex;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification {
+    width: 350px;
+    padding: 0;
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification a {
+    color: #686c71;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification a:hover {
+    color: #111;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-head {
+    background: #39465C;
+    padding: 15px 20px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-head h6 {
+    color: #fff;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-head a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-body {
+    padding: 0;
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-body img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-body li {
+    padding: 15px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-body li.n-title {
+    padding-bottom: 0;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-body li.n-title p {
+    margin-bottom: 5px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-body li.notification:hover {
+    background: rgba(25, 188, 191, 0.1);
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-body li p {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-body li p strong {
+    color: #222;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-body li .n-time {
+    font-size: 80%;
+    float: right;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-footer {
+    border-top: 1px solid #f1f1f1;
+    padding: 15px 20px;
+    text-align: center;
+    background: #eff3f6;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification .noti-footer a {
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .notification ul li {
+    padding: 20px 15px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification {
+    padding: 0;
+    line-height: 1.4;
+    overflow: hidden;
+    width: 290px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-head {
+    color: #fff;
+    border-radius: 0.25rem 0.25rem 0 0;
+    padding: 15px;
+    position: relative;
+    background: #19BCBF;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-head img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-head .dud-logout {
+    color: #fff;
+    padding-right: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body {
+    padding: 20px 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body li a {
+    color: #686c71;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body li a i {
+    margin-right: 10px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body li.active, body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body li:active, body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body li:focus, body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body li:hover {
+    background: rgba(25, 188, 191, 0.1);
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body li.active > a, body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body li:active > a, body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body li:focus > a, body.layout-8 .pcoded-navbar.theme-horizontal .profile-notification .pro-body li:hover > a {
+    background: transparent;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .navbar-nav {
+    width: 264px;
+    z-index: 1029;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .navbar-nav .dropdown-toggle:after {
+    left: 0;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .navbar-nav .dropdown-toggle + .notification,
+body.layout-8 .pcoded-navbar.theme-horizontal .navbar-nav .dropdown-toggle + .profile-notification {
+    position: absolute;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .navbar-nav .dropdown > a,
+body.layout-8 .pcoded-navbar.theme-horizontal .navbar-nav li > a {
+    display: block;
+    margin-right: 15px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal .navbar-nav > li > a,
+body.layout-8 .pcoded-navbar.theme-horizontal .navbar-nav > li {
+    line-height: 64px;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .sidenav-horizontal:after, body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .sidenav-horizontal:before {
+    background: #fff;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .header-logo {
+    background: #fff;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .header-logo .b-title {
+    color: #39465C;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .header-logo .mobile-menu span {
+    background-color: rgba(57, 70, 92, 0.8);
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .header-logo .mobile-menu span:after, body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .header-logo .mobile-menu span:before {
+    background-color: rgba(57, 70, 92, 0.8);
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .header-logo .mobile-menu:hover span {
+    background-color: #39465C;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .header-logo .mobile-menu:hover span:after, body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .header-logo .mobile-menu:hover span:before {
+    background-color: #39465C;
+}
+
+body.layout-8 .pcoded-navbar.theme-horizontal.menu-light .header-logo .mobile-menu.on span {
+    background-color: transparent;
+}
+
+/* menu [ layout-8 ] css end */

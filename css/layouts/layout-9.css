@@ -1,0 +1,186 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-9 css start
+==========================  **/
+/* menu[ layout-9 ] css start */
+body.layout-9 {
+    background: #ecf4fb;
+}
+
+body.layout-9 .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal {
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    top: -108px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .navbar-content {
+    box-shadow: none;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .pcoded-inner-navbar > li:last-child > a {
+    margin-right: 0;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .sidenav-horizontal-next,
+body.layout-9 .pcoded-navbar.theme-horizontal .sidenav-horizontal-prev {
+    display: none;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .sidenav-horizontal:after, body.layout-9 .pcoded-navbar.theme-horizontal .sidenav-horizontal:before {
+    display: none;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal ~ .pcoded-header {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal ~ .pcoded-header .m-header {
+    padding-left: 0;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal ~ .pcoded-main-container {
+    margin-top: 222px;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal ~ .pcoded-main-container .pcoded-wrapper {
+    background: #fff;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal.top-nav-collapse ~ .pcoded-header {
+    min-height: 55px;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal.top-nav-collapse ~ .pcoded-header .dropdown .dropdown-toggle,
+body.layout-9 .pcoded-navbar.theme-horizontal.top-nav-collapse ~ .pcoded-header .navbar-nav > li {
+    line-height: 55px;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .layout9-nav {
+    width: 100%;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .sidemenu li {
+    display: inline-block;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .sidemenu li a {
+    padding: 15px 25px;
+    border-radius: 5px 5px 0 0;
+    color: #39465C;
+    background: rgba(57, 70, 92, 0.15);
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .sidemenu li a i {
+    display: none;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .sidemenu li:last-child a {
+    margin-right: 0;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .sidemenu li.active a {
+    background: #39465C;
+    color: #b5bdca;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal.l9-full-menu .sidemenu li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .side-content {
+    width: 100%;
+    background: #39465C;
+    box-shadow: 0 4px 2px -3px rgba(69, 90, 100, 0.09);
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .sidelink {
+    display: none;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal .sidelink.active {
+    display: inline-block;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal.menu-light .sidemenu li a {
+    background: rgba(57, 70, 92, 0.05);
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal.menu-light .sidemenu li.active a {
+    background: #fff;
+    color: #39465C;
+}
+
+body.layout-9 .pcoded-navbar.theme-horizontal.menu-light .side-content {
+    background: #fff;
+    box-shadow: 0 4px 2px -3px rgba(69, 90, 100, 0.09);
+    height: 64px;
+}
+
+@media only screen and (max-width: 991px) {
+    body.layout-9 .pcoded-navbar {
+        padding: 0;
+        height: auto;
+        min-height: 100%;
+    }
+
+    body.layout-9 .pcoded-navbar .navbar-content,
+  body.layout-9 .pcoded-navbar .navbar-wrapper {
+        height: auto;
+        min-width: 100%;
+    }
+
+    body.layout-9 .pcoded-navbar.mob-open ~ .pcoded-header:before,
+  body.layout-9 .pcoded-navbar.mob-open ~ .pcoded-main-container:before, body.layout-9 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-header:before,
+  body.layout-9 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-main-container:before {
+        background: transparent;
+    }
+
+    body.layout-9 .pcoded-navbar .sidemenu {
+        display: none;
+    }
+}
+
+/* menu [ layout-9 ] css end */

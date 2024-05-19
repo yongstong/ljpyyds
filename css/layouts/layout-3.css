@@ -1,0 +1,120 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-3 css start
+==========================  **/
+/* menu[ layout-3 ] css start */
+body.layout-3 .pcoded-header {
+    box-shadow: inset 0 -1px 0 0 rgba(100, 121, 143, 0.122);
+}
+
+body.layout-3 .pcoded-navbar.menu-light {
+    box-shadow: inset -1px 0 0 0 rgba(100, 121, 143, 0.122);
+}
+
+body.layout-3 .pcoded-navbar.menu-light .pcoded-submenu {
+    background: transparent;
+}
+
+body.layout-3 .pcoded-navbar.menu-light .pcoded-inner-navbar > li.pcoded-menu-caption:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 1px;
+    width: calc(100% - 40px);
+    box-shadow: inset 0 -1px 0 0 rgba(100, 121, 143, 0.122);
+}
+
+body.layout-3 .pcoded-navbar.menu-light .pcoded-inner-navbar > li.pcoded-menu-caption:first-child:after {
+    display: none;
+}
+
+body.layout-3 .pcoded-navbar.menu-light .pcoded-inner-navbar > li > a {
+    border-radius: 0 20px 20px 0;
+    margin-right: 15px;
+    padding: 4px 15px;
+}
+
+body.layout-3 .pcoded-navbar.menu-light .pcoded-inner-navbar > li > a:after {
+    top: 8px;
+    right: 15px;
+}
+
+body.layout-3 .pcoded-navbar.menu-light .pcoded-inner-navbar > li.active > a, body.layout-3 .pcoded-navbar.menu-light .pcoded-inner-navbar > li.pcoded-trigger > a {
+    background: rgba(25, 188, 191, 0.15);
+    color: #19BCBF;
+}
+
+body.layout-3 .pcoded-navbar.navbar-collapsed .pcoded-inner-navbar > li > a {
+    margin-right: 8px;
+}
+
+body.layout-3 .pcoded-navbar.navbar-collapsed .pcoded-inner-navbar > li > a:after {
+    top: 8px;
+    right: 15px;
+}
+
+body.layout-3 .pcoded-navbar.navbar-collapsed:hover .pcoded-inner-navbar > li > a > .pcoded-micon + .pcoded-mtext {
+    top: 9px;
+}
+
+body.layout-3 .pcoded-navbar.active-blue .pcoded-inner-navbar > li.active > a, body.layout-3 .pcoded-navbar.active-blue .pcoded-inner-navbar > li.pcoded-trigger > a {
+    background: rgba(25, 188, 191, 0.15);
+    color: #19BCBF;
+}
+
+body.layout-3 .pcoded-navbar.active-red .pcoded-inner-navbar > li.active > a, body.layout-3 .pcoded-navbar.active-red .pcoded-inner-navbar > li.pcoded-trigger > a {
+    background: rgba(255, 151, 100, 0.15);
+    color: #FF9764;
+}
+
+body.layout-3 .pcoded-navbar.active-purple .pcoded-inner-navbar > li.active > a, body.layout-3 .pcoded-navbar.active-purple .pcoded-inner-navbar > li.pcoded-trigger > a {
+    background: rgba(70, 54, 153, 0.15);
+    color: #463699;
+}
+
+body.layout-3 .pcoded-navbar.active-info .pcoded-inner-navbar > li.active > a, body.layout-3 .pcoded-navbar.active-info .pcoded-inner-navbar > li.pcoded-trigger > a {
+    background: rgba(45, 206, 227, 0.15);
+    color: #2DCEE3;
+}
+
+body.layout-3 .pcoded-navbar.active-dark .pcoded-inner-navbar > li.active > a, body.layout-3 .pcoded-navbar.active-dark .pcoded-inner-navbar > li.pcoded-trigger > a {
+    background: rgba(57, 70, 92, 0.15);
+    color: #39465C;
+}
+
+body.layout-3 .card {
+    box-shadow: 0 0 0 1px rgba(100, 121, 143, 0.122);
+    transition: all 0.25s ease-in-out;
+}
+
+body.layout-3 .card:hover {
+    box-shadow: 0 0 0 1px rgba(100, 121, 143, 0.122), 0 2px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* menu [ layout-3 ] css end */

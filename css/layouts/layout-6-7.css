@@ -1,0 +1,147 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-6/7 css start
+==========================  **/
+/* menu[ layout-6/7 ] css start */
+body.layout-6 .pcoded-navbar.theme-horizontal ~ .pcoded-header .mobile-menu.on span {
+    background: transparent;
+}
+
+body.layout-6 .pcoded-header .m-header .mobile-menu#show-toggle, body.layout-7 .pcoded-header .m-header .mobile-menu#show-toggle {
+    right: 60px;
+}
+
+body.layout-6 .pcoded-navbar.theme-horizontal ~ .pcoded-header .m-header, body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-header .m-header {
+    position: relative;
+    width: 264px;
+    align-self: stretch;
+}
+
+body.layout-6 .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*=header-] .mobile-menu span, body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*=header-] .mobile-menu span {
+    background: #fff;
+}
+
+body.layout-6 .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*=header-] .mobile-menu span:after, body.layout-6 .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*=header-] .mobile-menu span:before, body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*=header-] .mobile-menu span:after, body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*=header-] .mobile-menu span:before {
+    background: #fff;
+}
+
+body.layout-6 .pcoded-navbar.theme-horizontal ~ .pcoded-header .mobile-menu, body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-header .mobile-menu {
+    display: flex;
+}
+
+body.layout-6 .pcoded-navbar.theme-horizontal ~ .pcoded-header .mobile-menu span, body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-header .mobile-menu span {
+    background: #39465C;
+}
+
+body.layout-6 .pcoded-navbar.theme-horizontal ~ .pcoded-header .mobile-menu span:after, body.layout-6 .pcoded-navbar.theme-horizontal ~ .pcoded-header .mobile-menu span:before, body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-header .mobile-menu span:after, body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-header .mobile-menu span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    background-color: #39465C;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+
+body.layout-6 .pcoded-navbar .scroll-div.navbar-content, body.layout-7 .pcoded-navbar .scroll-div.navbar-content {
+    height: 100%;
+}
+
+body.layout-6 .pcoded-navbar:not(.theme-horizontal), body.layout-7 .pcoded-navbar:not(.theme-horizontal) {
+    position: fixed;
+    top: 0;
+    left: -264px;
+}
+
+@media only screen and (max-width: 991px) {
+    body.layout-6 .pcoded-navbar:not(.theme-horizontal), body.layout-7 .pcoded-navbar:not(.theme-horizontal) {
+        position: absolute;
+    }
+
+    body.layout-6 .pcoded-navbar:not(.theme-horizontal) .navbar-content, body.layout-7 .pcoded-navbar:not(.theme-horizontal) .navbar-content {
+        box-shadow: none;
+    }
+}
+
+body.layout-6 .pcoded-navbar:not(.theme-horizontal).mob-open, body.layout-7 .pcoded-navbar:not(.theme-horizontal).mob-open {
+    left: 0;
+}
+
+body.layout-6 .pcoded-navbar:not(.theme-horizontal).mob-open ~ .pcoded-navbar.theme-horizontal:before, body.layout-7 .pcoded-navbar:not(.theme-horizontal).mob-open ~ .pcoded-navbar.theme-horizontal:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+@media only screen and (max-width: 992px) {
+    body.layout-6 .pcoded-navbar.mob-open-h, body.layout-7 .pcoded-navbar.mob-open-h {
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        top: 64px;
+        height: calc(100vh - 64px);
+    }
+}
+
+body.layout-7 .pcoded-navbar.theme-horizontal {
+    width: calc(100% - 264px);
+    margin-left: 264px;
+}
+
+body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-header {
+    width: calc(100% - 264px);
+    margin-left: 264px;
+}
+
+body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-header .m-header {
+    display: none;
+}
+
+body.layout-7 .pcoded-navbar.theme-horizontal ~ .pcoded-main-container {
+    margin-left: 264px;
+}
+
+body.layout-7 .pcoded-navbar:not(.theme-horizontal) {
+    left: 0;
+}
+
+body.layout-7 .pcoded-navbar:not(.theme-horizontal).navbar-collapsed ~ .pcoded-header,
+body.layout-7 .pcoded-navbar:not(.theme-horizontal).navbar-collapsed ~ .pcoded-main-container,
+body.layout-7 .pcoded-navbar:not(.theme-horizontal).navbar-collapsed ~ .theme-horizontal {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+}
+
+/* menu [ layout-6/7 ] css end */

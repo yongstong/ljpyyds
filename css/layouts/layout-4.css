@@ -1,0 +1,190 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-4 css start
+==========================  **/
+/* menu[ layout-4 ] css start */
+body.layout-4 {
+    background: #19BCBF;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top right;
+    position: relative;
+  /* dark navbar */
+}
+
+body.layout-4 .page-header-title + .breadcrumb > .breadcrumb-item:last-child a,
+body.layout-4 .page-header-title h5,
+body.layout-4 .pcoded-header .input-group .search-btn .input-group-text,
+body.layout-4 .pcoded-header .navbar-nav > li > .dropdown > .dropdown-toggle,
+body.layout-4 .pcoded-header .navbar-nav > li > .dropdown-toggle,
+body.layout-4 .pcoded-header .navbar-nav > li > a {
+    color: #fff;
+}
+
+body.layout-4 .mobile-menu span,
+body.layout-4 .mobile-menu span:after,
+body.layout-4 .mobile-menu span:before,
+body.layout-4 .pcoded-navbar.menu-light .mobile-menu span,
+body.layout-4 .pcoded-navbar.menu-light .mobile-menu span:after,
+body.layout-4 .pcoded-navbar.menu-light .mobile-menu span:before {
+    background: #fff;
+}
+
+body.layout-4 .breadcrumb-item + .breadcrumb-item::before,
+body.layout-4 .page-header-title + .breadcrumb > .breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.layout-4 .pcoded-content {
+    background: #eff3f6;
+}
+
+body.layout-4 .navbar-brand,
+body.layout-4 .pcoded-header.header-blue,
+body.layout-4 .pcoded-navbar,
+body.layout-4 .pcoded-navbar.menu-light,
+body.layout-4 .pcoded-navbar.menu-light .header-logo {
+    background: transparent;
+    box-shadow: none;
+}
+
+body.layout-4 .pcoded-navbar .navbar-content {
+    background: #39465C;
+    border-radius: 0 3px 0 0;
+    box-shadow: 0 0 20px 0 #39465C;
+}
+
+body.layout-4 .pcoded-header .main-search .input-group .form-control {
+    width: 0;
+}
+
+body.layout-4.box-layout .pcoded-navbar .navbar-content {
+    border-radius: 3px 3px 0 0;
+}
+
+body.layout-4 .main-body {
+    min-height: calc(100vh - 200px);
+}
+
+body.layout-4 .pcoded-navbar.menu-light .navbar-content {
+    background: #fff;
+    box-shadow: 7px 0 15px 0 rgba(69, 90, 100, 0.09);
+}
+
+body.layout-4 .pcoded-navbar.mob-open ~ .pcoded-header:before,
+body.layout-4 .pcoded-navbar.mob-open ~ .pcoded-main-container:before,
+body.layout-4 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-header:before,
+body.layout-4 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-main-container:before {
+    background: transparent;
+}
+
+body.layout-4 .pcoded-navbar.navbar-collapsed:hover .navbar-brand .b-brand {
+    display: none;
+}
+
+body.layout-4 .pcoded-navbar.navbar-collapsed:hover .navbar-brand .mobile-menu {
+    right: auto;
+    left: 20px;
+    transition-delay: 0s;
+}
+
+body.layout-4 .pcoded-navbar.navbar-collapsed:hover .navbar-brand .mobile-menu span {
+    background: transparent;
+}
+
+body.layout-4 .pcoded-navbar.navbar-collapsed:hover .mobile-menu span {
+    background-color: transparent;
+}
+
+body.layout-4 .pcoded-navbar.navbar-collapsed:hover .mobile-menu span:after, body.layout-4 .pcoded-navbar.navbar-collapsed:hover .mobile-menu span:before {
+    height: 2px;
+    width: 100%;
+}
+
+body.layout-4 .pcoded-navbar.navbar-collapsed:hover .mobile-menu span:before {
+    transform: rotate(45deg) translate(4px, 4px);
+}
+
+body.layout-4 .pcoded-navbar.navbar-collapsed:hover .mobile-menu span:after {
+    transform: rotate(-45deg) translate(3px, -3px);
+}
+
+body.layout-4 .pcoded-header {
+    background: transparent;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 991px) {
+    body.layout-4 .pcoded-header .container > .collapse:not(.show),
+  body.layout-4 .pcoded-header > .collapse:not(.show) {
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+body.layout-4 .pcoded-content {
+    margin-top: 120px;
+}
+
+body.layout-4 .pcoded-content .pcoded-inner-content {
+    margin-top: -120px;
+    min-height: calc(100vh + 120px);
+}
+
+body.layout-4 .pcoded-navbar .header-logo {
+    background: transparent;
+}
+
+body.layout-4 .pcoded-navbar.navbar-dark.brand-info .header-logo, body.layout-4 .pcoded-navbar.navbar-dark[class*=navbar-].brand-info .header-logo,
+body.layout-4 .pcoded-navbar.navbar-dark .header-logo {
+    background: transparent;
+}
+
+body.layout-4 .pcoded-navbar.navbar-dark .navbar-content {
+    background: #39465C;
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+@media only screen and (max-width: 991px) {
+    body.layout-4 .pcoded-header .collapse:not(.show) .mob-toggler:after,
+  body.layout-4 .pcoded-header .navbar-nav > li > .dropdown > .dropdown-toggle,
+  body.layout-4 .pcoded-header .navbar-nav > li > .dropdown-toggle,
+  body.layout-4 .pcoded-header .navbar-nav > li > a {
+        color: #fff;
+    }
+
+    body.layout-4 .pcoded-header .mobile-menu.on span {
+        background: transparent;
+    }
+
+    body.layout-4 .pcoded-header .mobile-menu.on span:after, body.layout-4 .pcoded-header .mobile-menu.on span:before {
+        background: #fff;
+    }
+}
+
+/* menu [ layout-4 ] css end */

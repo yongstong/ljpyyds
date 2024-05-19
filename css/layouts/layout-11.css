@@ -1,0 +1,302 @@
+/*
+    description Of variables for build for theme layouts
+        1) menu-caption-color
+            List of color for sidebar menu caption
+
+        2) brand-background
+            List of color for logo background
+
+        3) header-dark-background
+            List of color for Dark Header
+
+        4) header-light-background
+            List of color for light Header
+
+        5) menu-dark-background
+            List of color for Dark sidebar menu
+
+        6) menu-light-background
+            List of color for light sidebar menu
+
+        7) menu-active-color
+            List of color for Active item highliter
+
+        8) menu-icon-color
+            List of color for sidebar menu items icon colors
+*/
+/**  =====================
+     layout-11 css start
+==========================  **/
+/* menu[ layout-11 ] css start */
+body.layout-11 {
+    background: #ecf4fb;
+}
+
+body.layout-11 .card {
+    box-shadow: 0 0 15px 0 rgba(69, 90, 100, 0.09);
+}
+
+@media only screen and (min-width: 992px) {
+    body.layout-11 .pcoded-navbar {
+        background: transparent;
+    }
+
+    body.layout-11 .pcoded-navbar .navbar-content {
+        background: #39465C;
+        left: 25px;
+        margin-top: 25px;
+        box-shadow: 0 0 15px 0 rgba(69, 90, 100, 0.09);
+    }
+
+    body.layout-11 .pcoded-navbar ~ .pcoded-main-container {
+        margin-left: 289px;
+    }
+
+    body.layout-11 .pcoded-navbar ~ .pcoded-header {
+        box-shadow: 0 1px 20px 0 rgba(63, 77, 103, 0.15);
+        width: calc(100% - 264px);
+        margin-left: 264px;
+    }
+}
+
+body.layout-11 .pcoded-navbar.menupos-fixed .scroll-div.navbar-content {
+    height: calc(100% - 120px);
+    min-height: calc(100% - 120px);
+}
+
+body.layout-11 .pcoded-navbar .header-logo {
+    width: 264px;
+    margin-right: 0;
+    padding: 10px 25px;
+    background: #fff;
+    box-shadow: -10px 1px 20px 0 rgba(63, 77, 103, 0.15);
+}
+
+body.layout-11 .pcoded-navbar .header-logo .mobile-menu {
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+body.layout-11 .pcoded-navbar .header-logo .mobile-menu span {
+    background-color: rgba(57, 70, 92, 0.8);
+}
+
+body.layout-11 .pcoded-navbar .header-logo .mobile-menu span:after, body.layout-11 .pcoded-navbar .header-logo .mobile-menu span:before {
+    background-color: rgba(57, 70, 92, 0.8);
+}
+
+body.layout-11 .pcoded-navbar .header-logo .mobile-menu:hover span {
+    background-color: #39465C;
+}
+
+body.layout-11 .pcoded-navbar .header-logo .mobile-menu:hover span:after, body.layout-11 .pcoded-navbar .header-logo .mobile-menu:hover span:before {
+    background-color: #39465C;
+}
+
+body.layout-11 .pcoded-navbar .header-logo .mobile-menu.on span {
+    background-color: transparent;
+}
+
+body.layout-11 .pcoded-navbar .header-logo .b-brand .b-title {
+    color: #39465C;
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+body.layout-11 .pcoded-navbar .pcoded-inner-navbar > li.active > a, body.layout-11 .pcoded-navbar .pcoded-inner-navbar > li.pcoded-trigger > a {
+    background: transparent;
+}
+
+body.layout-11 .pcoded-navbar .pcoded-inner-navbar > li.active:after, body.layout-11 .pcoded-navbar .pcoded-inner-navbar > li.pcoded-trigger:after {
+    display: none;
+}
+
+body.layout-11 .pcoded-navbar.mob-open ~ .pcoded-header:before,
+body.layout-11 .pcoded-navbar.mob-open ~ .pcoded-main-container:before, body.layout-11 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-header:before,
+body.layout-11 .pcoded-navbar.navbar-collapsed:hover ~ .pcoded-main-container:before {
+    background: transparent;
+}
+
+body.layout-11 .pcoded-navbar.navbar-collapsed ~ .pcoded-main-container {
+    margin-left: 95px;
+}
+
+body.layout-11 .pcoded-navbar.menu-light .navbar-content {
+    background: #fff;
+}
+
+body.layout-11 .pcoded-navbar.navbar-blue .navbar-content {
+    background: #19BCBF;
+}
+
+body.layout-11 .pcoded-navbar.navbar-red .navbar-content {
+    background: #FF9764;
+}
+
+body.layout-11 .pcoded-navbar.navbar-purple .navbar-content {
+    background: #463699;
+}
+
+body.layout-11 .pcoded-navbar.navbar-info .navbar-content {
+    background: #2DCEE3;
+}
+
+body.layout-11 .pcoded-navbar.navbar-dark .navbar-content {
+    background: #39465C;
+}
+
+body.layout-11 .pcoded-navbar.navbar-gradient-blue .navbar-content {
+    background: linear-gradient(-45deg, #19BCBF, #149698);
+}
+
+body.layout-11 .pcoded-navbar.navbar-gradient-red .navbar-content {
+    background: linear-gradient(-45deg, #FF425C, #e53b52);
+}
+
+body.layout-11 .pcoded-navbar.navbar-gradient-purple .navbar-content {
+    background: linear-gradient(-45deg, #463699, #7661e6);
+}
+
+body.layout-11 .pcoded-navbar.navbar-gradient-info .navbar-content {
+    background: linear-gradient(-45deg, #2DCEE3, #24a4b5);
+}
+
+body.layout-11 .pcoded-navbar.navbar-gradient-dark .navbar-content {
+    background: linear-gradient(-45deg, rgb(36, 46, 62), rgb(58, 76, 103));
+}
+
+body.layout-11 .pcoded-navbar[class*=brand-]:not(.brand-default) .mobile-menu span,
+body.layout-11 .pcoded-navbar[class*=brand-]:not(.brand-default) .mobile-menu span:after,
+body.layout-11 .pcoded-navbar[class*=brand-]:not(.brand-default) .mobile-menu span:before {
+    background: #fff;
+}
+
+body.layout-11 .pcoded-navbar[class*=brand-]:not(.brand-default) .mobile-menu.on span {
+    background: transparent;
+}
+
+body.layout-11 .pcoded-navbar[class*=brand-]:not(.brand-default) .header-logo .b-brand .b-title {
+    color: #fff;
+}
+
+body.layout-11 .pcoded-navbar[class*=brand-]:not(.brand-default) .b-bg {
+    background: #fff;
+    color: #19BCBF;
+}
+
+body.layout-11 .pcoded-navbar.brand-blue .header-logo, body.layout-11 .pcoded-navbar.menu-light.brand-blue .header-logo, body.layout-11 .pcoded-navbar[class*=navbar-].brand-blue .header-logo {
+    background: #19BCBF;
+}
+
+body.layout-11 .pcoded-navbar.brand-red .header-logo, body.layout-11 .pcoded-navbar.menu-light.brand-red .header-logo, body.layout-11 .pcoded-navbar[class*=navbar-].brand-red .header-logo {
+    background: #b31d1d;
+}
+
+body.layout-11 .pcoded-navbar.brand-purple .header-logo, body.layout-11 .pcoded-navbar.menu-light.brand-purple .header-logo, body.layout-11 .pcoded-navbar[class*=navbar-].brand-purple .header-logo {
+    background: #463699;
+}
+
+body.layout-11 .pcoded-navbar.brand-info .header-logo, body.layout-11 .pcoded-navbar.menu-light.brand-info .header-logo, body.layout-11 .pcoded-navbar[class*=navbar-].brand-info .header-logo {
+    background: #2DCEE3;
+}
+
+body.layout-11 .pcoded-navbar.brand-dark .header-logo, body.layout-11 .pcoded-navbar.menu-light.brand-dark .header-logo, body.layout-11 .pcoded-navbar[class*=navbar-].brand-dark .header-logo {
+    background: #39465C;
+}
+
+body.layout-11 .pcoded-navbar[class*=navbar-image] {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+body.layout-11 .pcoded-navbar[class*=navbar-image]:before {
+    display: none;
+}
+
+body.layout-11 .pcoded-navbar[class*=navbar-image] .navbar-content .pcoded-inner-navbar {
+    position: relative;
+}
+
+body.layout-11 .pcoded-navbar[class*=navbar-image] .navbar-content .pcoded-inner-navbar:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+body.layout-11 .pcoded-navbar.navbar-image-1 .navbar-content {
+    background-image: url("../images/nav-bg/navbar-img-1.jpg");
+}
+
+body.layout-11 .pcoded-navbar.navbar-image-2 .navbar-content {
+    background-image: url("../images/nav-bg/navbar-img-2.jpg");
+}
+
+body.layout-11 .pcoded-navbar.navbar-image-3 .navbar-content {
+    background-image: url("../images/nav-bg/navbar-img-3.jpg");
+}
+
+body.layout-11 .pcoded-navbar.navbar-image-4 .navbar-content {
+    background-image: url("../images/nav-bg/navbar-img-4.jpg");
+}
+
+body.layout-11 .pcoded-navbar.navbar-image-5 .navbar-content {
+    background-image: url("../images/nav-bg/navbar-img-5.jpg");
+}
+
+body.layout-11 .pcoded-navbar[class*=navbar-pattern] {
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+body.layout-11 .pcoded-navbar[class*=navbar-pattern]:before {
+    display: none;
+}
+
+body.layout-11 .pcoded-navbar[class*=navbar-pattern] .pcoded-inner-navbar {
+    position: relative;
+}
+
+body.layout-11 .pcoded-navbar[class*=navbar-pattern] .pcoded-inner-navbar > li.active > a, body.layout-11 .pcoded-navbar[class*=navbar-pattern] .pcoded-inner-navbar > li.pcoded-trigger > a {
+    background: rgba(45, 56, 73, 0.4);
+}
+
+body.layout-11 .pcoded-navbar[class*=navbar-pattern] .pcoded-inner-navbar:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+body.layout-11 .pcoded-navbar.navbar-pattern-1 .navbar-content {
+    background-image: url("../images/bg-images/1.jpg");
+}
+
+body.layout-11 .pcoded-navbar.navbar-pattern-2 .navbar-content {
+    background-image: url("../images/bg-images/2.jpg");
+}
+
+body.layout-11 .pcoded-navbar.navbar-pattern-3 .navbar-content {
+    background-image: url("../images/bg-images/3.jpg");
+}
+
+body.layout-11 .pcoded-navbar.navbar-pattern-4 .navbar-content {
+    background-image: url("../images/bg-images/4.jpg");
+}
+
+body.layout-11 .pcoded-navbar.navbar-pattern-5 .navbar-content {
+    background-image: url("../images/bg-images/5.jpg");
+}
+
+body.layout-11 .pcoded-navbar.navbar-pattern-6 .navbar-content {
+    background-image: url("../images/bg-images/6.jpg");
+}
+
+/* menu [ layout-11 ] css end */
